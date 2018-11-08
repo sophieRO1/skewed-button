@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('happy.jpg');
+    background-size: cover;
+    /* background-color: rgb(211, 91, 137); */
+}
+
+
+#btn {
+    height: 40px;
+    width: 200px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    font-family: fantasy;
+    font-size: 17px ;
+    color: #2d2d2d;
+    cursor: pointer;
+}
+
+#btn::before {
+    content: "";
+    height: 45px;
+    width: 10px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skewX(-24deg);
+    z-index: -1;
+    transition: all 0.24s;
+
+}
+
+#btn:hover:before {
+    width: 240px;
+}
